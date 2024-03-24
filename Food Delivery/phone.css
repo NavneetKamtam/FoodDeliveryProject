@@ -1,0 +1,48 @@
+/* nav */
+
+.nav {
+    flex-direction: column;
+}
+
+.nav ul li a {
+    padding: 0px 3px;
+}
+
+/* home */
+
+.home {
+    width: 100%;
+    padding: 0px;
+}
+
+.home h1,
+.service-container h1,
+.online-clients h1,
+.contact h1 {
+    font-size: 1.5rem;
+}
+
+.home p {
+    font-size: 0.9rem;
+}
+
+/* our service */
+
+.service {
+    flex-direction: column;
+}
+
+/* connect with us */
+
+.clients {
+    flex-wrap: wrap;
+}
+
+.clients::before {
+    height: 50%;
+}
+
+.clients img {
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,263 @@
+/* For all tags and attributes */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* For Nav */
+.nav {
+    position: sticky;
+    top: 1px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav::before {
+    content: '';
+    background-color: orange;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 100px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li {
+    padding: 5px 5px;
+    list-style: none;
+}
+
+.nav ul li a {
+    padding: 5px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Home */
+.home {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+}
+
+.home::before {
+    content: "";
+    background: url('/homeimg.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.home h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 20px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.home p {
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid white;
+    padding: 5px 35px;
+    border-radius: 5px;
+    background-color: rgb(255 210 129);
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* for our service section */
+
+.service-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 10px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: rgb(255 210 127);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box img {
+    height: 130px;
+    width: 200px;
+    padding: 10px 5px;
+}
+
+.box h2 {
+    font-family: 'Roboto Slab', serif;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    text-transform: uppercase;
+}
+
+.box p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* our clients section */
+
+.online-clients h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 10px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.online-clients {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.online-clients::before {
+    content: '';
+    background: url('/clientbackgroundimg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.clients img {
+    height: 140px;
+    width: 150px;
+    padding: 10px 10px;
+}
+
+/* contac section */
+
+.contact {
+    position: relative;
+}
+
+.contact h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 10px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.info::before {
+    content: '';
+    background: url('/contactimg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.form {
+    margin: 5px 0px;
+}
+
+.form label {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: 2px solid black;
+    padding: 3px 3px;
+}
+
+.info button {
+    position: relative;
+    left: 120px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
