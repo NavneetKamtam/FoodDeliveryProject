@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:ital,wght@1,500&family=Ubuntu&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 5px 3px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+}
+
+/* Navbar */
+.imglogo {
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    filter: invert(100);
+    padding: 3px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    padding: 5px 15px;
+    font-size: large;
+    margin: 0px 15px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.searchmenu {
+    width: 30%;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.searchmenu input {
+    font-size: smaller;
+    margin: 2px 6px;
+    outline: none;
+    padding: 3px 5px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+.btn-sm {
+    font-size: larger;
+    cursor: pointer;
+    padding: 2px 6px;
+    border: none;
+    filter: invert(1);
+    border-radius: 19px;
+}
+
+.btn-sm:hover {
+    filter: none;
+}
+
+/* Heading */
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading:hover {
+    background-color: white;
+    filter: invert(100);
+}
+
+.headinglogo {
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    padding: 3px 0px;
+}
+
+/* Section First */
+
+.first-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.first-section::before {
+    content: '';
+    background: url(/Images/campusimg.jpg.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.right {
+    margin: 30px 30px;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background: url("https://source.unsplash.com/random/?campus") center center/cover;
+    border-radius: 20px;
+}
+
+.left {
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.img-resp {
+    display: none;
+}
+
+
+.buttons {
+    margin: 10px;
+}
+
+.btn {
+    font-size: medium;
+    margin: 3px 10px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: lightgray;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Section 2 */
+.img-section {
+    width: 50%;
+    height: 300px;
+    margin: 14px 34px;
+    border-radius: 20px;
+}
+
+.second-section {
+    background-color: #ffe3fd;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 10px auto;
+    padding: 20px 80px;
+    border-radius: 211px;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #ffe3fd;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 15px auto;
+    margin-bottom: 0px;
+}
+
+.form input {
+    width: 80%;
+    margin: 5px 3px;
+    padding: 4px 9px;
+    font-size: medium;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.gender {
+    width: 50%;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 0px 3px;
+    display: flex;
+    align-items: center;
+    margin: 0px 3px;
+}
+
+.gender input {
+    width: 7%;
+}
+
+.genderdeside {
+    display: flex;
+    margin: 3px 3px;
+}
+
+.lables {
+    display: inline-block;
+    width: 100px;
+    font-size: medium;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: end;
+    margin-right: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.btn-con {
+    width: 25%;
+    margin: 10px auto;
+    margin-top: 25px;
+}
+
+/* Footer */
+
+footer p {
+    background: black;
+    color: white;
+    font-family: none;
+    text-align: center;
+    padding: 5px 0px;
+}
